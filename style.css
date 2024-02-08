@@ -1,0 +1,67 @@
+body {
+  background-color: #111;
+  color: white;
+}
+body #grid {
+  display: flex;
+  width: 1000px;
+  height: 666.6666666667px;
+  flex-direction: column;
+  padding: 3px;
+  font-size: 1.8em;
+  font-family: Arial Black;
+  border-radius: 6px;
+  user-select: none;
+  background-color: #222;
+}
+body #grid .row {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+body #grid .row .cell {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border-radius: 3px;
+  background-color: #555;
+  color: #ddd;
+  transition: transform 0.07s ease;
+}
+body #grid .row .cell.value-0 {
+  color: transparent;
+}
+body #grid .row .cell.value-1 {
+  color: cyan;
+}
+body #grid .row .cell.value-2 {
+  color: green;
+}
+body #grid .row .cell.value-3 {
+  color: red;
+}
+body #grid .row .cell.value-4 {
+  color: blue;
+}
+body #grid .row .cell.value-5 {
+  color: darkred;
+}
+body #grid .row .cell.value-X {
+  background-color: #111;
+  color: darkred;
+}
+body #grid .row .cell:hover {
+  transform: scale(98%);
+}
+body #grid .row .cell.hidden {
+  background-color: #333;
+  color: transparent;
+}
+body #grid .row .cell.hidden:hover {
+  transform: scale(96%);
+}
+body #grid .row .cell.hidden:active {
+  transform: scale(91%);
+}
